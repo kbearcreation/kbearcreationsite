@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css?family=Open Sans:400,600,700italic,900,400italic,300italic,300");
+/* line 1, ../sass/layouts/_master.sass */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/layouts/_master.sass */
+body {
+  font-family: "Open Sans";
+  background-color: #111811;
+  font-weight: 100;
+}
+/* line 9, ../sass/layouts/_master.sass */
+body .background {
+  background-repeat: no-repeat;
+  background-image: url("./img/newcastle_2014-08-09-17.56.jpg");
+  background-size: 920px;
+  background-position: center top;
+  z-index: -999;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  /* line 9, ../sass/layouts/_master.sass */
+  body .background {
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+  }
+}
+/* line 26, ../sass/layouts/_master.sass */
+body .background .background-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+/* line 31, ../sass/layouts/_master.sass */
+body em {
+  font-style: italic;
+}
+/* line 33, ../sass/layouts/_master.sass */
+body strong {
+  font-weight: 800;
+}
+/* line 36, ../sass/layouts/_master.sass */
+body a {
+  color: #B2EEDF;
+  text-decoration: none;
+}
+/* line 39, ../sass/layouts/_master.sass */
+body a:hover {
+  text-decoration: underline;
+}
+
+/* line 42, ../sass/layouts/_master.sass */
+.cluster {
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+/* line 48, ../sass/layouts/_master.sass */
+.cluster i {
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  color: white;
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 0px;
+  font-size: 2em;
+  opacity: 0.8;
+}
+/* line 57, ../sass/layouts/_master.sass */
+.cluster h3 {
+  font-size: 2.8em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-weight: 600;
+  max-width: 300px;
+  margin-bottom: 20px;
+  color: #ff7c2e;
+}
+/* line 65, ../sass/layouts/_master.sass */
+.cluster p {
+  color: #eeeeee;
+  line-height: 1.4em;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 71, ../sass/layouts/_master.sass */
+  .cluster {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+  /* line 77, ../sass/layouts/_master.sass */
+  .cluster h3 {
+    font-size: 3.4em;
+  }
+  /* line 79, ../sass/layouts/_master.sass */
+  .cluster i {
+    top: 30px;
+    right: 30px;
+    font-size: 4em;
+    opacity: 0.5;
+  }
+  .cluster i.push-left {
+    right: 115px;
+    top: 26px;
+  }
+  /* line 84, ../sass/layouts/_master.sass */
+  .cluster i.active {
+    opacity: 1;
+  }
+  /* line 86, ../sass/layouts/_master.sass */
+  .cluster p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+}
+
+.center-block {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 1, ../sass/pages/_homepage.sass */
+.section__content.page__homepage {
+  color: white;
+  padding: 15px;
+  max-width: 600px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  /* line 1, ../sass/pages/_homepage.sass */
+  .section__content.page__homepage {
+    padding: 0;
+  }
+}
+
+/* line 1, ../sass/blocks/_nav.sass */
+nav.section__nav {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0px;
+}
+nav.section__nav .kbc-logo {
+  display: block;
+  max-width: 260px;
+  margin: 10px;
+  float:left;
+}
+/* line 9, ../sass/blocks/_nav.sass */
+nav.section__nav .kbc-logo-text, 
+nav.section__nav .kbc-logo-text {
+  margin: 15px auto 5px auto;
+  float: left;
+  font-size: 2.2em;
+  /*font-family: fantasy;*/
+  font-family: 'Londrina Sketch', cursive;
+}
+ 
+@media screen and (min-width: 600px) {
+  /* line 11, ../sass/blocks/_nav.sass */
+  nav.section__nav .kbc-logo {
+    /*width: 100px;*/
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 11, ../sass/blocks/_nav.sass */
+  nav.section__nav .kbc-logo {
+    /*width: 150px;*/
+  }
+}
+/* line 21, ../sass/blocks/_nav.sass */
+nav.section__nav .main-menu {
+  display: block;
+  float: right;
+  padding: 10px;
+}
+
+/* line 1, ../sass/blocks/_header.sass */
+header.section__header {
+  padding-top: 50px;
+  height: 520px;
+}
+/* line 5, ../sass/blocks/_header.sass */
+header.section__header .header-copy {
+  color: white;
+}
+/* line 7, ../sass/blocks/_header.sass */
+header.section__header .scroll-down-link {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  /* line 7, ../sass/blocks/_header.sass */
+  header.section__header .scroll-down-link {
+    text-align: center;
+    margin: auto;
+    display: block;
+    opacity: 0;
+    margin-top: 25px;
+  }
+}
+/* line 15, ../sass/blocks/_header.sass */
+header.section__header .header-maincopy {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+/* line 20, ../sass/blocks/_header.sass */
+header.section__header .header-maincopy.animate .intro, header.section__header .header-maincopy.animate .second {
+  opacity: 0;
+}
+/* line 22, ../sass/blocks/_header.sass */
+header.section__header .header-maincopy .intro {
+  margin-left: 140px;
+}
+/* line 24, ../sass/blocks/_header.sass */
+header.section__header .header-maincopy .second {
+  color: #ff7c2e;
+  font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  /* line 15, ../sass/blocks/_header.sass */
+  header.section__header .header-maincopy {
+    font-size: 3em;
+    margin-top: 100px;
+  }
+}
+/* line 31, ../sass/blocks/_header.sass */
+header.section__header .header-subcopy {
+  max-width: 615px;
+  margin: auto;
+  color: #dddddd;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.4em;
+  padding: 10px;
+}
+/* line 34, ../sass/blocks/_header.sass */
+header.section__header .header-subcopy.animate {
+  opacity: 0;
+}
+
+/* line 1, ../sass/blocks/_contact.sass */
+.section__contact {
+  padding: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+/* line 6, ../sass/blocks/_contact.sass */
+.section__contact .info-box {
+  line-height: 1.4em;
+  color: white;
+  font-weight: normal;
+  background-color: #169e7b;
+  padding: 10px;
+}
+/* line 13, ../sass/blocks/_contact.sass */
+.section__contact .info-box a {
+  color: white;
+  text-decoration: none;
+}
+/* line 17, ../sass/blocks/_contact.sass */
+.section__contact input, .section__contact textarea {
+  border: 0;
+  width: 100%;
+  font-size: 1.5em;
+  -webkit-appearance: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+/* line 25, ../sass/blocks/_contact.sass */
+.section__contact button {
+  background: none;
+  border: 0;
+  -webkit-appearance: none;
+  background-color: #ff7c2e;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/* line 35, ../sass/blocks/_contact.sass */
+.section__contact button:hover {
+  background-color: #fa5d00;
+}
+/* line 37, ../sass/blocks/_contact.sass */
+.section__contact img {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+/* line 43, ../sass/blocks/_contact.sass */
+.section__contact .form-wrapper {
+  margin-top: 10px;
+}
+/* line 46, ../sass/blocks/_contact.sass */
+.section__contact .map-wrapper > a {
+  font-size: 0;
+}
+
+/* line 1, ../sass/blocks/_footer.sass */
+.section__footer {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+}
+/* line 6, ../sass/blocks/_footer.sass */
+.section__footer .copyright {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+/* line 10, ../sass/blocks/_footer.sass */
+.section__footer .scroll {
+  color: white;
+}
+/* line 12, ../sass/blocks/_footer.sass */
+.section__footer .social {
+  text-align: center;
+}
+/* line 14, ../sass/blocks/_footer.sass */
+.section__footer .social a {
+  font-size: 3em;
+  margin: auto;
+  color: white;
+  margin: 5px;
+}

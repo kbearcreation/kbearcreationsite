@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Open Sans:400,600,700italic,900,400italic,300italic,300");
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #111811;
+  font-weight: 100;
+}
+
+body .background {
+  background-repeat: no-repeat;
+  background-image: url("./img/newcastle_2014-08-09-17.56.jpg");
+  background-size: 920px;
+  background-position: center top;
+  z-index: -999;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+/*
+ * Override styles for Vimeo Wrap Player
+ * See: https://wesleyluyten.com/projects/vimeo-wrap/carousel 
+ */
+#player_carousel_navleft, #player_carousel_navright {
+    color: #FFF;
+}
+
+/* Center the content of the Sample Videos block */
+.sample-videos {
+  margin: 0 auto;
+    width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  body .background {
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+  }
+}
+
+body .background .background-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+body em {
+  font-style: italic;
+}
+
+body strong {
+  font-weight: 800;
+}
+
+body a {
+  color: #B2EEDF;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+
+.cluster {
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.cluster i {
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  color: white;
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 0px;
+  font-size: 2em;
+  opacity: 0.8;
+}
+
+.cluster h3 {
+  font-size: 2.8em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-weight: 600;
+  max-width: 300px;
+  margin-bottom: 20px;
+  color: #ff7c2e;
+}
+
+.cluster h4 {
+  font-size: 2.0em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-weight: 600;
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ff7c2e;
+}
+
+.cluster h5 {
+  font-size: 1.6em;
+  /*text-transform: uppercase;*/
+  /*line-height: 0.9em;*/
+  font-weight: 500;
+  /*max-width: 300px;*/
+  /*margin-bottom: 20px;*/
+  color: #e95123; /*Tangerine*/
+  margin-top: 15px;
+}
+
+.cluster p {
+  color: #eeeeee;
+  line-height: 1.4em;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.cluster p.porfolio-subtitle {
+  font-size: 1.2em;
+  color: #e95123;
+  margin-bottom: 10px;
+}
+
+/* PORTFOLIO STYLES (.section__portfolio) */
+
+.portfolio-item {
+  /*border-bottom: 1px solid #bab6b6; */
+  margin-bottom: 20px;
+}
+.portfolio-item p {
+  margin: 0; padding: 4px 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .cluster {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+  .cluster h3 {
+    font-size: 3.4em;
+  }
+  .cluster i {
+    top: 30px;
+    right: 30px;
+    font-size: 4em;
+    opacity: 0.5;
+  }
+  .cluster i.push-left {
+    right: 115px;
+    top: 26px;
+  }
+  .cluster i.active {
+    opacity: 1;
+  }
+  .cluster p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+}
+
+.center-block {
+  margin: 0 auto;
+  display: block;
+}
+
+.section__content.page__homepage {
+  color: white;
+  padding: 15px;
+  max-width: 600px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .section__content.page__homepage {
+    padding: 0;
+  }
+}
+
+nav.section__nav {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0px;
+}
+nav.section__nav .kbc-logo {
+  display: block;
+  max-width: 260px;
+  margin: 10px;
+  float:left;
+}
+nav.section__nav .kbc-logo-text,
+nav.section__nav .kbc-logo-text {
+  margin: 15px auto 5px auto;
+  float: left;
+  font-size: 2.2em;
+  /*font-family: fantasy;*/
+  font-family: 'Londrina Sketch', cursive;
+}
+ 
+@media screen and (min-width: 600px) {
+  nav.section__nav .kbc-logo {
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav.section__nav .kbc-logo {
+  }
+}
+nav.section__nav .main-menu {
+  display: block;
+  float: right;
+  padding: 10px;
+}
+
+header.section__header {
+  padding-top: 75px;
+  height: 520px;
+}
+header.section__header .header-copy {
+  color: white;
+}
+header.section__header .scroll-down-link {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header.section__header {
+    padding-top: 50px;
+    height: 653px;
+  }
+  header.section__header .scroll-down-link {
+    text-align: center;
+    margin: auto;
+    display: block;
+    opacity: 0;
+    margin-top: 25px;
+  }
+}
+header.section__header .header-maincopy {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+header.section__header .header-maincopy.animate .intro, header.section__header .header-maincopy.animate .second {
+  opacity: 0;
+}
+header.section__header .header-maincopy .intro {
+  margin-left: 140px;
+}
+header.section__header .header-maincopy .second {
+  color: #ff7c2e;
+  font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  header.section__header .header-maincopy {
+    font-size: 3em;
+    margin-top: 100px;
+  }
+}
+header.section__header .header-subcopy {
+  max-width: 615px;
+  margin: auto;
+  color: #dddddd;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.4em;
+  padding: 10px;
+}
+header.section__header .header-subcopy.animate {
+  opacity: 0;
+}
+
+/* CONTACT FORM STYLES */
+
+.section__contact {
+  padding: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+.section__contact .info-box {
+  line-height: 1.4em;
+  color: white;
+  font-weight: normal;
+  background-color: #169e7b;
+  padding: 10px;
+}
+.section__contact .info-box a {
+  color: white;
+  text-decoration: none;
+}
+.section__contact input, .section__contact textarea {
+  border: 0;
+  width: 100%;
+  font-size: 1.5em;
+  -webkit-appearance: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+.section__contact button {
+  background: none;
+  border: 0;
+  -webkit-appearance: none;
+  background-color: #ff7c2e;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.section__contact button:hover {
+  background-color: #fa5d00;
+}
+.section__contact img {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+.section__contact .form-wrapper {
+  margin-top: 10px;
+}
+.section__contact .map-wrapper > a {
+  font-size: 0;
+}
+
+.section__footer {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+}
+.section__footer .copyright {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+.section__footer .scroll {
+  color: white;
+}
+.section__footer .social {
+  text-align: center;
+}
+.section__footer .social a {
+  font-size: 3em;
+  margin: auto;
+  color: white;
+  margin: 5px;
+}
