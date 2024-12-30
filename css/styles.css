@@ -139,9 +139,18 @@ body a:hover {
 
 /* PORTFOLIO STYLES (.section__portfolio) */
 
+.portfolio-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
 .portfolio-item {
   /*border-bottom: 1px solid #bab6b6; */
-  margin-bottom: 20px;
+ // margin-bottom: 20px;
+  padding: 5px;
+}
+.portfolio-item img {
+  width: 160px;
 }
 .portfolio-item p {
   margin: 0; padding: 4px 12px;
