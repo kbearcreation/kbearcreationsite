@@ -137,6 +137,26 @@ body a:hover {
   margin-bottom: 10px;
 }
 
+/* havLightBox style overrides */
+
+@media screen and (min-width: 768px) {
+  .havlightbox-thumbnail {
+    width: 240px;
+  }
+  #havLightbox {
+
+    .havlightbox-prev-button {
+      left: 30%;
+    }
+    .havlightbox-next-button {
+      right: 30%;
+    }
+  .havlightbox-image-container {
+    width: 33%;
+  }
+}
+}
+
 /* PORTFOLIO STYLES (.section__portfolio) */
 
 .portfolio-gallery {
@@ -210,12 +230,13 @@ nav.section__nav {
   width: 100%;
   z-index: 999;
   top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 nav.section__nav .kbc-logo {
-  display: block;
-  max-width: 260px;
-  margin: 10px;
-  float:left;
+  flex-basis: 100%;
+  margin: 2px;
 }
 nav.section__nav .kbc-logo-text,
 nav.section__nav .kbc-logo-text {
@@ -228,6 +249,8 @@ nav.section__nav .kbc-logo-text {
  
 @media screen and (min-width: 600px) {
   nav.section__nav .kbc-logo {
+    flex-basis: fit-content;
+    margin: 10px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -235,14 +258,16 @@ nav.section__nav .kbc-logo-text {
   }
 }
 nav.section__nav .main-menu {
-  display: block;
-  float: right;
-  padding: 10px;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2px 10px;
 }
 
 header.section__header {
-  padding-top: 75px;
-  height: 520px;
+  padding-top: 100px;
+  height: 500px;
 }
 header.section__header .header-copy {
   color: white;
@@ -253,7 +278,7 @@ header.section__header .scroll-down-link {
 @media screen and (min-width: 768px) {
   header.section__header {
     padding-top: 50px;
-    height: 653px;
+    height: 640px;
   }
   header.section__header .scroll-down-link {
     text-align: center;
