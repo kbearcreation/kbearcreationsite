@@ -1,6 +1,41 @@
 <html>
-<head>Gallery</head>
+<head>
+  <link rel="stylesheet" href="./css/havlightbox.min.css">
+</head>
 <body>
-KBear Creation Gallery
+<h1>KBear Creation Gallery</h1>
+
+<div class="havlightbox-gallery">
+  <img 
+    class="havlightbox-thumbnail" 
+    src="https://1drv.ms/i/c/5fdc1a0af466e69d/IQRNIlyUMbu7TZ6lNqu7DSDaAaajb8GGCI13lbyQv71c5Zo?height=256" 
+    data-havlightbox-image="https://1drv.ms/i/c/5fdc1a0af466e69d/IQRNIlyUMbu7TZ6lNqu7DSDaAaajb8GGCI13lbyQv71c5Zo?height=1024"
+    alt="Wind and Water 2025" />
+  <img 
+    class="havlightbox-thumbnail" 
+    src="https://1drv.ms/i/c/5fdc1a0af466e69d/IQTjOqKcKQubQYk76YTPnz7fAYeXZgFpjg0dEX-kNRucYZ8?height=256" 
+    data-havlightbox-image="https://1drv.ms/i/c/5fdc1a0af466e69d/IQTjOqKcKQubQYk76YTPnz7fAYeXZgFpjg0dEX-kNRucYZ8?height=1024" 
+    alt="Mask Mirror 2025" />
+  <img 
+    class="havlightbox-thumbnail" 
+    src="https://1drv.ms/i/c/5fdc1a0af466e69d/IQRm6Nwz70xvRZgLjejhPRtaAemrXkBi4LJVWs6u8DNaS0k?height=256" 
+    data-havlightbox-image="https://1drv.ms/i/c/5fdc1a0af466e69d/IQRm6Nwz70xvRZgLjejhPRtaAemrXkBi4LJVWs6u8DNaS0k?height=1024"
+    alt="Peekaboo 2025" />
+</div>
+
+<!-- havLightbox container -->
+<div id="havLightbox" class="havlightbox">
+  <div id="havLightboxImageCounter" class="havlightbox-image-counter"></div>
+  <span class="havlightbox-close">&times;</span>
+  <div class="havlightbox-image-container">
+    <img src="" alt="havLightbox Image" id="havLightboxImg">
+    <div id="havLightboxCaption" class="havlightbox-caption"></div>
+    <div id="havLightboxThumbnailSelection" class="havlightbox-thumbnail-selection"></div>
+  </div>
+  <button id="havLightboxPrevBtn" class="havlightbox-prev-button">&#10094;</button>
+  <button id="havLightboxNextBtn" class="havlightbox-next-button">&#10095;</button>
+</div>
+<script src="./js/havlightbox.min.js"></script>
+
 </body>
 </html>
