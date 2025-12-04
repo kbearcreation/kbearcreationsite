@@ -144,17 +144,22 @@ body a:hover {
     width: 240px;
   }
   #havLightbox {
-
-    .havlightbox-prev-button {
+    .havlightbox-image-counter {
       left: 30%;
     }
-    .havlightbox-next-button {
+    .havlightbox-close {
       right: 30%;
     }
   .havlightbox-image-container {
     width: 33%;
   }
-}
+      .havlightbox-prev-button {
+      left: 30%;
+    }
+    .havlightbox-next-button {
+      right: 30%;
+    }
+  }
 }
 
 /* PORTFOLIO STYLES (.section__portfolio) */
