@@ -30,13 +30,13 @@ body .background {
  * See: https://wesleyluyten.com/projects/vimeo-wrap/carousel 
  */
 #player_carousel_navleft, #player_carousel_navright {
-    color: #FFF;
+  color: #FFF;
 }
 
 /* Center the content of the Sample Videos block */
 .sample-videos {
   margin: 0 auto;
-    width: 90%;
+  width: 90%;
 }
 
 @media screen and (min-width: 768px) {
@@ -141,20 +141,29 @@ body a:hover {
 /* havLightBox style overrides */
 
 @media screen and (min-width: 768px) {
-  .havlightbox-thumbnail {
-    width: 240px;
+  .havlightbox-gallery.sculptures {
+
+    .havlightbox-thumbnail {
+      width: 148px;
+    }
   }
+  .havlightbox.open img {
+    max-height: 60%;
+    max-width: 60%;
+  }
+
   #havLightbox {
+
     .havlightbox-image-counter {
       left: 30%;
     }
     .havlightbox-close {
       right: 30%;
     }
-  .havlightbox-image-container {
-    width: 33%;
-  }
-      .havlightbox-prev-button {
+    .havlightbox-image-container {
+      width: 33%;
+    }
+    .havlightbox-prev-button {
       left: 30%;
     }
     .havlightbox-next-button {
@@ -172,7 +181,7 @@ body a:hover {
 }
 .portfolio-item {
   /*border-bottom: 1px solid #bab6b6; */
- // margin-bottom: 20px;
+// margin-bottom: 20px;
   padding: 5px;
 }
 .portfolio-item img {
@@ -183,7 +192,7 @@ body a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .cluster {
+  .cluster {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.8);
     margin-bottom: 50px;
@@ -252,14 +261,14 @@ nav.section__nav .kbc-logo-text {
   /*font-family: fantasy;*/
   font-family: 'Londrina Sketch', cursive;
 }
- 
+
 nav.section__nav .main-menu {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
   align-items: center;
   padding: 2px 10px;
-  li a {font-size: 14px;}
+li a {font-size: 14px;}
 }
 
 @media screen and (min-width: 600px) {
@@ -268,8 +277,8 @@ nav.section__nav .main-menu {
     margin: 10px;
   }
   nav.section__nav .main-menu {
-    li a {font-size: 16px;}
-  }
+  li a {font-size: 16px;}
+}
 }
 
 header.section__header {
