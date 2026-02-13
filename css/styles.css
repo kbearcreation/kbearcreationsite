@@ -141,7 +141,8 @@ body a:hover {
 /* havLightBox style overrides */
 
 @media screen and (min-width: 768px) {
-  .havlightbox-gallery.sculptures {
+  .havlightbox-gallery.sculptures,
+  .havlightbox-gallery.designs {
 
     .havlightbox-thumbnail {
       width: 148px;
